@@ -1,93 +1,37 @@
-.jumbotron {
-  display:none;
+
+.content { padding-top: 70px; }
+
+
+
+/****NAVIGATION****/
+
+.navbar {
+  z-index: 1;
+}
+
+.bg-dark {
+    background-color: black!important;
+}
+
+
+
+
+/****HOME****/
+
+
+#top.jumbotron {
   background-image: url("../img/flower-power-3.jpg");
   background-size: cover;
+}
+
+.lead {
+  text-align: center;
+  padding-top: 1%;
 }
 
 .carousel-caption .d-none .d-md-block h2 {
   padding-left: 60%;
   color: black;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 24% !important;
-    color: #fff;
-    text-align: center;
-}
-
-
-.left {
-  float: left;
-  width:50%;
-  margin: 0 0 0 0;
-}
-
-.right {
-  float: right;
-  width: 50%;
-  margin: 0 0 0 0;
-}
-
-.right a {
-  float: right;
-}
-
-nav {
-  z-index: 1;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  margin: 0 0 0 0;
-  top: 0;
-  right:0;
-  left: 0;
-  padding: 7px;
-  background-color: white;
-}
-
-nav .nav-container {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.nav-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100%;
-}
-
-
-  
-
-.right a {
-  color:black;
-  font-size: 1rem;
-  padding: 2% 2.4% 1% 0;
-  font-family: 'Playfair Display', serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.right a:hover {
-  transition: color 600ms;
-  -webkit-transition: color 600ms;
-  color: black;
-  text-shadow: 2px 1px white;
-  text-decoration: underline;
-  text-shadow: 2px 1px #e5e9ea;
-}
- 
-.right a:active {
-    text-decoration: underline;
 }
 
 
@@ -101,6 +45,41 @@ nav .nav-container {
 }
 
 
+
+
+.btn-primary {
+  background-color: white;
+  border-color: black;
+  border: 2px solid black;
+
+}
+
+
+
+a.btn {
+  color:black;
+  text-align: center;
+}
+
+
+.btn-primary:hover {
+  background-color: black;
+  border-color: black;
+  border: 2px solid black;
+}
+
+
+
+a:hover.btn {
+  color:white;
+}
+
+
+
+
+
+/****HOME - Typography****/
+
 .display-4 {
   font-family: 'Playfair Display', serif;
   font-weight: 300;
@@ -108,14 +87,9 @@ nav .nav-container {
   color: black;
   text-shadow: 2px 1px white;
   text-align: center;
-}
-
-
-.display-4 {
-    font-size: 5rem !important;
-    font-weight: 300;
-    line-height: 1.2;
-    padding-top: 13%;
+  font-size: 5rem !important;
+  line-height: 1.2;
+  padding-top: 16%;
 }
 
 
@@ -124,18 +98,7 @@ nav .nav-container {
     font-size: 3rem;
   }
 
-.container h2{
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-size: 2.5rem;
-  text-align: center;
-}
 
-.container {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-}
-  
 
 .jumbotron p{
   color: black;
@@ -147,231 +110,55 @@ nav .nav-container {
 }
 
 
-.lead {
-  text-align: center;
-  padding-top: 2%;
-}
 
 
-  
-
-body {
- font-family: 'Lora', serif;
-}
-
-col-6 col-md-3 {
-  margin: 5%;
-}
-
----
-
-
-
-
-
-
-
-
-
-
-/**** Contact page ****/
-
-
-
-nav {
-  position: fixed;
-  width: 100%;
-  margin: 0 0 0 0;
-  top: 0;
-  right:0;
-  left: 0;
-  padding: 7px;
-  background-color: white;
-}
-
-nav .nav-container {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.nav-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100%;
-}
-
-
-
-.contact-page {
-  background: linear-gradient(
-    to right,
-    #fff 0%,
-    #fff 50%,
-    #e8dede 50%,
-    #e8dede 100%
-  );
-}
-
-
-
-.contact-page .col-4 h1 {
-  margin-top: 12%;
-}
-
-
-.contact-page .img-fluid {
-  margin-left: 10%;
-  margin-top: -8%;
-}
-
-.contact-page .row .col .img-fluid {
-   margin-left:20%;
-  margin-top: -40%;
-}
-
-.contact-page .row .col h3 {
-  margin-top: -50%;
-}
-
-/*Typography*/
-
-
-
-.contact-page .col-4 h1 {
-  font-family: 'Playfair Display';
-  font-size: 3rem;
-  text-align: center;
-}
-
-.contact-page .col h3 {
-   font-family: 'Playfair Display';
-   text-align: center;
-}
-
-.contact-page .row .col h2 {
-  text-align: center;
-}
-
-.contact-page .row .col p {
-  text-align: center;
-}
-
-
-
-/**** FAQ page ****/
-
-.faq-page {
-  background-image: url("../img/flower-power-3.jpg");
-  background-size: cover;
-}
-
-.container h1 {
+.container h2{
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  text-align: center;
-}
-  
-  
-.card-header {
-  background: #e5e9ea;
-}
-
-.card-header button {
   color: black;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-.card-body {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
+.container .row p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 120%;
+  text-align: center;
+  color:black;
 }
+  
 
-.btn {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem !important;
-}
 
-.btn-link:hover {
-    color: #cc6225 !important;
-    text-decoration: underline;
-    )
-    
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
 
 
 /**** About page ****/
 
-.left {
-  float: left;
-  width:50%;
-  margin: 0 0 0 0;
-}
-
-.right {
-  float: right;
-  width: 50%;
-  margin: 0 0 0 0;
-}
-
-.right a {
-  float: right;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  margin: 0 0 0 0;
-  top: 0;
-  right:0;
-  left: 0;
-  padding: 7px;
-  background-color: white;
-}
-
-nav .nav-container {
-  margin-left: 0;
-  margin-right: 0;
-  width: 100%;
-}
-
-.nav-container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100%;
-}
 
 
   
-
-.right a {
-  color:black;
-  font-size: 1rem;
-  padding: 2% 2.4% 1% 0;
-  font-family: 'Playfair Display', serif;
-  font-weight: 100;
-  text-transform: uppercase;
-  text-decoration: none;
+#about.container .header-area {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.right a:hover {
-  transition: color 600ms;
-  -webkit-transition: color 600ms;
-  color: black;
-  text-shadow: 2px 1px white;
-  text-decoration: underline;
-  text-shadow: 2px 1px #e5e9ea;
-}
- 
-.right a:active {
-    text-decoration: underline;
-}
-
-
-
-
-
- 
 .about {
- font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
   color: black;
   text-shadow: 2px 3px white;
   text-align: left;
@@ -381,130 +168,36 @@ nav .nav-container {
   margin: 0 !important;
   padding-top: 35px;
     }
-
-
-.container {
-  width: 100%;
+    
+    
+#about.container .container .row .col-md-4 p{
+  background-color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25em;
+  font-weight: 200;
+  color: black;
+  font-size: 140%;
 }
 
-.header {
+
+#about.container .header {
   text-align: center;
-  margin-bottom: 6%;
-  margin-left: 5%;
+  padding-bottom: -4%;
 }
 
 
-.image img{
-  width: 100%;
-}
-
-.intro .column {
-  display: inline-block;
-  float:left;
-  width: 50%;
-}
-
-.image .column {
-  display: inline-block;
-  float: left;
-  width: 50%;
-}
-
-
-.intro .column {
-  padding: 0 40px;
-  margin-top: 7em;
-}
-
-
-.skills .column {
+.container .skills .column {
   display: inline-block;
   width: 100%;
   height: 100%;
   margin-top: 5%;
-  background-image: url("../img/bike.jpg");
-}
-
-.main-text {
-  display: inline-block;
-  float: left;
-  width: 100%;
+  border: 1px red;
 }
 
 
-.intro {
-  box-sizing: border-box;
+.container .skills .column p{
+  font-family: 'Open Sans Condensed', sans-serif;
 }
-
-.image {
-  box-sizing: border-box;
-}
-
-
-/*Typography*/
-
-h1,
-h2,
-h3 {
- font-family: 'Playfair Display', serif;
-}
-
-
-
-.col-6 .col-md-4 p {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25em;
-    font-weight: 100;
-    color: black;
-}
-
-.intro p {
-  -webkit-margin-before: 0;
-   margin-left: 30%;
-}
-
- h2 {
-    font-family: 'Spectral', serif;
-    font-weight: 100;
-    color: black;
-    text-align: center;
- }
- 
-  h3 {
-    font-family: 'Spectral', serif;
-    font-weight: 100;
-    color: black;
-    text-align: center;
- }
- 
- .main-text p {
-   font-family: 'Spectral', serif;
-    font-size: 1em;
-    font-weight: 100;
-    color: black;
-    text-align: center;
-}
- 
-.skills section p{
-   font-family: 'Spectral', serif;
-    font-size: 1.3em;
-    font-weight: 100;
-    color: black;
-    text-align: center;
-}
-
-
-
-/*Colors*/
-
-
-.intro {
-  background-color: #a2abb2;
-  color: #34495e;
-  width: 75%;
-}
-
-
 
 
 
@@ -515,13 +208,7 @@ h3 {
 body {
     overflow-x: hidden;
 }
-/*Just removing default browser padding/margin*/
-html,
-body {
-    padding: 0;
-    margin: 0;
-    color: #ebebeb;
-}
+
 /*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
 
 }
@@ -547,18 +234,11 @@ WebKit inertia scrolling is being added here for any present/future devices that
     padding: .5rem;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
-}
-/*Entirely optional – just wanted to remove the scrollbar on WebKit browsers as I find them ugly*/
 
-
-
-.Right::-webkit-scrollbar {
-    display: always;
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
+
+
 
 /* Track */
 .Right::-webkit-scrollbar-track {
@@ -577,11 +257,6 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .Right::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255,0,0,0.4);
 }
-
-
-
-
-
 
 
 /*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
@@ -615,10 +290,15 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 
 .Right p {
-  font-family: 'Playfair Display', serif;
+font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
   color: black;
 }
+
+
+
+
+
 
 
 
@@ -665,3 +345,116 @@ WebKit inertia scrolling is being added here for any present/future devices that
   margin-top: 8%;
 }
 
+
+
+
+
+
+/**** FAQ page ****/
+
+
+#faq.container {
+  margin-bottom: 10%;
+}
+
+
+#faq.container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+
+  
+.card-header {
+  background: #e5e9ea;
+  text-align: center;
+}
+
+.card-header button {
+  color: black;
+  text-align: center;
+}
+
+.card-body {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+}
+
+.btn {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem !important;
+}
+
+.btn-link:hover {
+    color: #cc6225 !important;
+    text-decoration: underline;
+    )
+    
+
+
+
+
+
+/**** Contact page ****/
+
+
+
+
+
+.container .container-contact .col-4 h1 {
+  margin-top: 50%;
+
+}
+
+
+.container .container-contact .img-fluid {
+  margin-top: -8%;
+}
+
+.container .container-contact .row .col .img-fluid {
+   margin-left:20%;
+  margin-top: -40%;
+}
+
+.container .container-contact .row .col h3 {
+  margin-top: -50%;
+}
+
+/*Typography*/
+
+
+
+
+#contact.container h3 {
+   font-family: 'Playfair Display';
+   text-align: center;
+}
+
+#contact.container h2 {
+  text-align: center;
+}
+
+#contact.container p {
+  text-align: center;
+}
+
+
+#contact.container h1{
+ font-family: 'Playfair Display', serif !important;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+
+
+
+
+
+body {
+  position: relative;
+}
