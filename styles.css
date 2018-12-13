@@ -138,16 +138,6 @@ a:hover.btn {
 
 
 
-
-
-
-
-  
-
-
-
-
-
 /**** Work section ****/
 
 
@@ -242,8 +232,8 @@ body {
 /*All the scrollable sections should overflow and be whatever height they need to be. As they are flex-items (due to being inside a flex container) they could be made to stretch full height at all times if needed.
 WebKit inertia scrolling is being added here for any present/future devices that are able to make use of it.
 */
-.Left,
-.Right {
+.story-section,
+.story-text {
     overflow: auto;
     height: auto;
     padding: .5rem;
@@ -256,32 +246,32 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 
 /* Track */
-.Right::-webkit-scrollbar-track {
+.story-text::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
 
 /* Handle */
-.Right::-webkit-scrollbar-thumb {
+.story-text::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
     background: #e5e9ea;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
-.Right::-webkit-scrollbar-thumb:window-inactive {
+.story-text::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255,0,0,0.4);
 }
 
 
 /*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
-.Left {
+.story-section {
     width: 55%;
     background-color: white;
 }
 
 
-.Right {
+.story-text {
     width: 100%;
     margin: 5%;
 }
@@ -294,7 +284,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
     width: 100%;
 }
 
-.Left h1 {
+.story-section h1 {
   text-align: right;
   color: black;
   vertical-align: 50%;
@@ -312,14 +302,11 @@ WebKit inertia scrolling is being added here for any present/future devices that
 
 
 
-.Right p {
+.story-text p {
 font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.5rem;
   color: black;
 }
-
-
-
 
 
 
@@ -367,8 +354,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 .header-area .header h1{
   margin-top: 8%;
 }
-
-
 
 
 .embed-responsive {
