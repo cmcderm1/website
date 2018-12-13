@@ -394,6 +394,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 #faq.container {
   margin-bottom: 10%;
 }
+
   
 .card-header {
   background: #e5e9ea;
@@ -421,10 +422,13 @@ font-family: 'Open Sans Condensed', sans-serif;
     color: #cc6225 !important;
     text-decoration: underline;
     )
-    
 
 
-
+@media (min-width: 768px) {
+  .modal-button button {
+    float: right;
+  }
+}
 
 
 /**** Contact page ***/
