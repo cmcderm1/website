@@ -17,15 +17,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
        
 
 
     <link rel="stylesheet" href="css/styles.css">
+    
+    
+        <!-- Can place script tags with JavaScript files here -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+
 
  </head>
 
 <body data-spy="scroll" data-target="#navbar-example">
+
 
  <!--navbar starts here-->
 
@@ -267,8 +276,11 @@
 </div><!-- /carouselExampleIndicators-->
 </div><!-- /row-->
 </section><!-- /skills-row-->
-</section>
-</div><!-- /container / id=about-->
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pwrwf_8H25Y" allowfullscreen></iframe>
+</div>
 
   
 
@@ -359,7 +371,7 @@
     background-image: url("img/coffee.jpg");
 
     /* Set a specific height */
-    height: 650px;
+    height: 900px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -369,7 +381,7 @@
 }
 
 .parallax h1{
-  padding-top: 15%;
+  padding-top: 10%;
   font-family: 'Playfair Display', serif !important;
   font-size: 3rem;
   text-align: center;
@@ -393,10 +405,25 @@
 }
   .parallax h3{
   font-family: 'Playfair Display', serif !important;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: black;
 }
+
+
+.form-group {
+    font-family: 'Playfair Display', serif !important;
+
+}
+
+#form-button.btn-primary {
+  color: black;
+}
+
+#form-button.btn-primary:hover {
+  color: white;
+}
+
 
 </style>
 
@@ -407,16 +434,49 @@
        <h1>Let's Chat!</h1>
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
         <h3>Have questions about my work? Want to grab a cup of coffee? Feel free to contact me.</h3>
-        <br>
-                
+        
+        <div class="row" id="email-form">
+       <div class="col-sm-12 col-md-5">
                 <h2>EMAIL:</h2>
                 <p><i class="fas fa-envelope"></i> candice.marie.mcdermott@gmail.com</p>
                 
                 <h2>PHONE:</h2>
                 <p><i class="fas fa-mobile-alt"></i> 419.908.8503</p>
+               </div>
+               
+               <div class="col-sm-12 col-md-7">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" placeholder="*Enter your name" type="text" id="name" required>
+                 </div>
+                  
+                  <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input class="form-control" placeholder="*Enter your email" input type="email" id="email" required>
+                  </div>
+                                   
+                 <div class="form-group">
+                  <label for="textarea">Message</label>
+                  <textarea class="form-control" placeholder="Place your message here" style="resize:none" cols="121" rows="8"></textarea>
+                  </div>
+                 
+                  <button type="submit" id="form-button" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+                </div>
+               
+ 
   </section>
-</div>
+  </div>
 
+
+<footer>&copy; 2018
+<a href="https://twitter.com/conscious_work?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @conscious_work</a>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2FConsciousCollaborative&layout=button&size=small&mobile_iframe=true&width=58&height=20&appId" width="58" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+</footer>
 
 
 
@@ -451,10 +511,7 @@
 
     <!-- Bootstrap core JS -->
 
-    <!-- Can place script tags with JavaScript files here -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
 
   
 
@@ -462,7 +519,6 @@
 
 </body>
 </html>
-
 
 
 
