@@ -1,5 +1,4 @@
 
-
 .content { padding-top: 70px; }
 
 
@@ -372,6 +371,12 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 
 
+.embed-responsive {
+  margin: 10px;
+}
+
+
+
 
 
 /**** FAQ page ****/
@@ -422,25 +427,9 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 
 
-/**** Contact page ****/
-
-
-
-
+/**** Contact page ***/
 
 /*Typography*/
-
-
-
-#contact.parallax {
- font-family: 'Playfair Display', serif !important;
-  font-size: 3rem;
-  text-align: center;
-  color: black;
-}
-
-
-
 
 
 
