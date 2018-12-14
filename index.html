@@ -1,442 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
-.content { padding-top: 70px; }
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <title>Hello World!</title>
+    <!-- Bootstrap core CSS -->
 
-
-/****NAVIGATION****/
-
-.navbar {
-    font-family: 'Playfair Display', serif;
-  z-index: 1;
-}
-
-.bg-dark {
-    background-color: black!important;
-}
-
-
-
-
-/****HOME****/
-
-
-#top.jumbotron {
-  background-image: url("../img/flower-power-3.jpg");
-  background-size: cover;
-}
+    
+    <!-- Latest compiled and minified CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       
 
 
+    <link rel="stylesheet" href="css/styles.css">
+   
+    
+    
+        <!-- Can place script tags with JavaScript files here -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
 
-.lead {
-  text-align: center;
-  padding-top: 1%;
-}
 
-.carousel-caption .d-none .d-md-block h2 {
-  padding-left: 60%;
+ </head>
+
+<body data-spy="scroll" data-target="#navbar-example">
+
+
+ <!--navbar starts here-->
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbar-example">
+  <a class="navbar-brand" href="#">CareerFoundry</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faq">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#work" id="Work" role="button" data-toggle="Work" aria-haspopup="true" aria-expanded="false">
+          Work
+        </a>
+        <div class="dropdown-menu" aria-labelledby="Work">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav> <!-- end nav container -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- /HOME Section-->
+
+<div class="jumbotron jumbotron-fluid" id="top">
+  <div class="container">
+    <h1 class="display-4">Candice McDermott</h1>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <p class="lead">Web Developer</p>
+  </div>
+ </div>
+
+
+
+<!-- Three Column Grid -->
+
+
+  <style>
+  .col-sm #data-button.btn-primary {
   color: black;
+  box-shadow: none;
 }
 
-
-.btn-primary {
-  margin-left: 30%;
-  margin-right: 30%;
+.col-sm #data-button.btn-primary:hover {
+  color: white;
 }
+</style>
 
-.row {
-  margin-top: 13%;
-}
+<div class="container">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+  <div class="row">
+    <div class="col-sm">
+      <h2>Portfolio Concept</h2>
+      
+      <p>My portfolio site can focus on my <a href="front-end development" title="More information" id="item1">front-end development</a> work on the WordPress CMS, as well as highlight new projects that I complete on CareerFoundry. </p>
+       <a class="btn btn-primary" href="#" role="button">View details &raquo;</a>
+    </div><!-- /col-sm -->
+      
+      
 
+    <div class="col-sm">
+      <h2>Project Goals</h2>
+      <p>I hope to dedicate 40+ hours to my projects and studies at CareerFoundry every week. Ideally, I will complete my course work within three months and be on my way to a career in web dev. </p>
+      <button type="button" class="btn btn-primary" id="data-button" data-toggle="tooltip" data-placement="top" title="Check out all the details with a click!">View details &raquo;</button>
+    </div><!-- /col -->
 
-
-
-.btn-primary {
-  background-color: white;
-  border-color: black;
-  border: 2px solid black;
-
-}
-
-
-
-a.btn {
-  color:black;
-  text-align: center;
-}
-
-
-.btn-primary:hover {
-  background-color: black;
-  border-color: black;
-  border: 2px solid black;
-}
-
-
-
-a:hover.btn {
-  color:white;
-}
+    <div class="col-sm">
+      <h2>Course Goals</h2>
+      <p>By the end of this course, my goals are to have a solid understanding of web development and an awareness of the right tools and resources to use in my new-found career. </p>
+      <a class="btn btn-primary" href="#" role="button">View details &raquo;</a>
+    </div><!-- /col -->
+  </div><!-- /row -->
+</div> <!-- /container -->
 
 
 
 
 
-/****HOME - Typography****/
 
-.display-4 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: black;
-  text-shadow: 2px 1px white;
-  text-align: center;
-  font-size: 5rem;
-  line-height: 1.2;
-  padding-top: 16%;
-}
-
-
-
-@media all and (max-width: 699px){
-   .display-4 {
-    font-size: 3.5rem;
-    padding-top: 50%;
-  }
-}
+<div class="container content">
+  <section class="container content" id= "work">
+  <h1>Front-End Dev Samples</h1>
+<div class="row" id="work">
+  <div class="col-6 col-md-3"><img src="img/deer_network_sample.jpg" class="img-fluid"><h4>Social Network Site</h4></div>
+  <div class="col-6 col-md-3"><img src="img/wealth_shield.jpg" class="img-fluid"><h4>Financial Organization</h4></div>
+  <div class="col-6 col-md-3"><img src="img/masrath_sample.jpg" class="img-fluid"><h4>Publication</h4></div>
+  <div class="col-6 col-md-3"><img src="img/conscious_collab_home.jpg" class="img-fluid"></div>
+  <div class="col-6 col-md-3"><img src="img/healing_hearts.jpg" class="img-fluid"></div>
+  <div class="col-6 col-md-3"><img src="img/prairie_sample.png" class="img-fluid"></div>
+  <div class="col-6 col-md-3"><img src="img/CDR_Give.png" class="img-fluid"></div>
+  <div class="col-6 col-md-3"><img src="img/htaba.png" class="img-fluid"></div>
+</div><!-- /row-->
+</section><!-- /container-content-->
+</div><!-- /container-->
 
 
+<!-- /ABOUT Section-->
 
 
+  <div class="container" id="about">
+    <div class="row" id="about-me">
+     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+     <div class="col-md-6 col-xs-12"><img src="img/candice_BW.png" class="img-fluid"></div>
+     <div class="col-md-6 col-xs-12">
+       <div class="Container">
+         
+        <div class="story-section"><h1>MY<br></h1><h1>STORY</h1></div>
+                    
+        <div class="story-text"><p>My professional background has predominately highlighted my interest in marketing and communications. I received a bachelor's degree in business administration at Ashland University and attained a master's degree in media communication and journalism at Point Park University in Pittsburgh.
+        <br>
+        <br>
+        During my career, I have working as a freelance web developer, customizing WordPress websites and drafting content for my clients. Additionally, I helped to bring life to Conscious Collaborative, a marketing agency in Pittsburgh that focuses on working with ethical organizations. The beauty of today's modern age is the option that we have to be more methodical about the work that we choose to be a part of. My current position, as the Managing Director at Conscious Collaborative has seriosuly inspired my love for working alongside changemakers and community leaders.
+        <br>
+        <br>
+        There's nothing more inspiring than working with organizations that are making a real difference in the world, and this is exactly what I seek to do in my future projects as a fullstack web developer.</p>
+        </div><!-- /Right-->
+    </div><!-- /Container-->
+    </div><!-- /row-->
+  </div><!-- /container-->
+  
 
-.jumbotron p{
-  color: black;
-  height: 275px;
-  font-size: 1.25rem;
-  font-family: 'Lora', serif;
-  font-weight: 200;
-  text-transform: uppercase;
-}
+
+  <div class="container">
+    <section class="skills section">
+      <section class="skills column">
+         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+        <h1 class="skills">MY SKILLS</h1>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+        <p>A concise list of the most valuable professional skills I possess.
+        <br>
+        As a web developer, these are my paint brushes.</p>
+      </section><!-- /skills column-->
+    </section><!-- /skills section-->
+  </div><!-- /container-->
+    
+<section class="skills-row">
+   <div class="row">
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+       <ol class="carousel-indicators">
+         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+       </ol>
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <div class="numberCircle">CSS</div>
+     </div>
+     <div class="carousel-item">
+       <div class="numberCircle">HTML</div>
+     </div>
+    </div><!-- /carousel-item-active-->
+  </div><!-- /carouselExampleIndicators-->
+  
+  
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="numberCircle">Ruby Rails</div>
+    </div>
+    <div class="carousel-item">
+      <div class="numberCircle">HTML5</div>
+    </div>
+  </div><!-- /carousel-inner-->
+  </div><!-- /carouselExampleIndicators-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="numberCircle">Bootstrap</div>
+    </div>
+    <div class="carousel-item">
+      <div class="numberCircle">JavaScript</div>
+    </div>
+  </div><!-- /carousel-inner-->
+</div><!-- /carouselExampleIndicators-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="numberCircle">Ruby Rails</div>
+    </div>
+    <div class="carousel-item">
+      <div class="numberCircle">HTML5</div>
+    </div>
+  </div><!-- /carousel-inner-->
+  </div><!-- /carouselExampleIndicators-->
 
 
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="numberCircle">Ruby Rails</div>
+    </div>
+    <div class="carousel-item">
+      <div class="numberCircle">HTML5</div>
+    </div>
+  </div><!-- /carousel-inner-->
+</div><!-- /carouselExampleIndicators-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="numberCircle">Ruby Rails</div>
+    </div>
+    <div class="carousel-item">
+      <div class="numberCircle">HTML5</div>
+    </div>
+  </div><!-- /carousel-inner-->
+</div><!-- /carouselExampleIndicators-->
+</div><!-- /row-->
+</section><!-- /skills-row-->
 
 
-.container h2{
-  font-family: 'Playfair Display', serif;
-  color: black;
-  font-size: 2.5rem;
-  text-align: center;
-}
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pwrwf_8H25Y" allowfullscreen></iframe>
+</div>
 
-.container .row p{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 120%;
-  text-align: center;
-  color:black;
-}
   
 
 
 
+<!-- /FAQ Section-->
 
 
 
+<div class="container" id="faq">
+   <h1>FAQ</h1>
+    <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><b>
+          Why web development?</b>
+        </button>
+      </h5>
+    </div><!-- /card-header-->
 
-
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       My background in marketing and content creation has caused me to work with numerous clients who are building new websites. I quickly gained an affinity for front-end web development and decided to attain a certification in web development. I love being able to bring peoples' ideas to life, and web development is all about making it happen. Every new project can mean a host of new questions that I get to solve. There's nothing quite like it.
+      </div><!-- /card-body-->
+    </div><!-- /collapseOne-->
+  </div><!-- /card-->
   
-
-
-
-
-
-/**** Work section ****/
-
-
-#work.container h1 {
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: -10%;
-
-}
-
-
-
-#work.container .row .col-6{
-  padding: 3%
-}
-
-#work.container .row .col-6 h4{
-  text-align: center;
-      font-family: 'Playfair Display', serif;
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <b>What is your design process?</b>
+        </button>
+      </h5>
+    </div><!-- /card-header-->
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        I like to keep my design process fairly simple. First, I try to get an understanding of the client that I am working with and their current aesthetic, whether it be their current branding elements, flyers, messaging, and/or market. Then I communicate with my client to understand their design goals and samples of designs that they like. Once I know the direction of my project, I get moving. Throughout the design process clear communication and client approval is a MUST.
+      </div><!-- /card-body-->
+    </div><!-- /collapseTwo-->
+  </div><!-- /card-->
   
+  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <b>Who are your clients?</b>
+        </button>
+      </h5>
+    </div><!-- /card-header-->
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Being a web developer means having the skillset to work with clients in very diverse fields. From consulting firms to nonprofit organizations, I typically work with clients who are looking for a developer who know what questions to ask and can offer other skills as well, like writing and marketing strategy.
+      </div><!-- /card-body-->
+    </div><!-- /collapseThree-->
+  </div><!-- /card-->
+
+<div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <b>What's your average project turnaround?</b>
+        </button>
+      </h5>
+    </div><!-- /card-header-->
+    <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Every project is unique, which means the turnaround time for two different projects can vary. I try to complete a website within 1-2 months tops. For simple designs, I can complete a website in 1-2 weeks. Much of my pace depends on the collaboration between myself and my client. The more information, clarification, and content that I am given at the beginning and throughout the development process, the quicker my turnaround.
+    </div><!-- /card-body-->
+  </div><!-- /collapseFour-->
+</div><!-- /card-->
+</div> <!-- /accordian-->
+</div> <!-- /container #faq-->
+
+
+
+
+
+<style>
+  .col-sm #modal-button.btn-primary {
+  color: black;
+  box-shadow: none;
+}
+
+.col-sm #modal-button.btn-primary:hover {
+  color: white;
 }
 
 
 
-/**** About page ****/
-
-
-
-
-#about.container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  max-width: 1700px !important;
+#modal-row.row {
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
     
-    
-#about.container .container .row .col-md-6 p{
-  background-color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.25em;
-  font-weight: 200;
-  color: black;
+
+#resume.container {
+  max-width: 900px;
 }
 
+</style>
 
-#about-me.row {
-  margin-top: 0;
-  padding-top: 70px;
-  margin: 0 !important;
+
+<div class="container" id="get-modal">
+  <div class="row" id="modal-row">
+    <div class="col-sm">
+      <h2>Explore my professional background.</h2>
+    </div>
+
+    <div class="col-sm">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary modal-button" id="modal-button" data-toggle="modal" data-target=".bd-example-modal">View Resume</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+      <div class="container" id="resume">
+        <img src="img/candice_resume.png" class="img-fluid"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- /CONTACT Section-->
+
+
+
+
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("img/coffee.jpg");
+
+    /* Set a specific height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container .skills .column {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-  border: 1px red;
-}
-
-
-.container .skills .column p{
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-
-
-* {
-    box-sizing: border-box;
-}
-/*This just stops me getting horizontal scrolling if anything overflows the width*/
-body {
-    overflow-x: hidden;
-}
-
-/*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
-
-}
-/*This is our main wrapping element, it's made 100vh high to ensure it is always the correct size and then moved into place and padded with negative margin and padding*/
-.Container {
-    display: flex;
-    overflow: hidden;
-    height: 100vh;
-    margin-top: -100px;
-    padding-top: 100px;
-    position: relative;
-    width: 100%;
-    backface-visibility: hidden;
-    will-change: overflow;
-}
-/*All the scrollable sections should overflow and be whatever height they need to be. As they are flex-items (due to being inside a flex container) they could be made to stretch full height at all times if needed.
-WebKit inertia scrolling is being added here for any present/future devices that are able to make use of it.
-*/
-.Left,
-.Right {
-    overflow: auto;
-    height: auto;
-    padding: .5rem;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: none;
-
-}
-
-
-
-
-/* Track */
-.Right::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-
-/* Handle */
-.Right::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #e5e9ea;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-}
-.Right::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(255,0,0,0.4);
-}
-
-
-/*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
-.Left {
-    width: 55%;
-    background-color: white;
-}
-
-
-.Right {
-    width: 100%;
-    margin: 5%;
-}
-
-.Container {
-    display: flex;
-    overflow: hidden;
-    height: calc(100vh - 100px);
-    position: relative;
-    width: 100%;
-}
-
-.Left h1 {
-  text-align: right;
-  color: black;
-  vertical-align: 50%;
-  font-size: 4rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .Left h1 {
-    font-size: 2rem;
-  }
-}
-
-
-
-.Right p {
-font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 1.5rem;
-  color: black;
-}
-
-
-
-
-
-
-
-
-.numberCircle {
-    width: 120px;
-    line-height: 120px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 18px;
-    border: 1px solid black;
-    color: black;
-    text-align: center;
-    display: inline-block;
-}
-
-
-.skills h1{
-  text-align: center;
-  color: black;
-  font-size: 4rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-}
-
-
-.skills p {
-  text-align: center;
-  color: black;
-  font-size: 2rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: 100;
-}
-
-.carousel {
-  margin-left: 5%
-}
-
-.Container .Left, .Right {
-  
-  margin-top: 12%;
-}
-
-.header-area .header h1{
-  margin-top: 8%;
-}
-
-
-
-
-.embed-responsive {
-  margin: 10px;
-}
-
-
-
-
-
-/**** FAQ page ****/
-
-
-
-#faq.container h1 {
-  padding-top: 8%;
-  font-family: 'Playfair Display', serif;
+.parallax h1{
+  padding-top: 10%;
+  font-family: 'Playfair Display', serif !important;
   font-size: 3rem;
   text-align: center;
   color: black;
 }
 
-#faq.container {
-  margin-bottom: 10%;
+
+.parallax p{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
 }
+  
+  
+  .parallax h2{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+  .parallax h3{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+
+.form-group {
+    font-family: 'Playfair Display', serif !important;
+
+}
+
+#form-button.btn-primary {
+  color: black;
+}
+
+#form-button.btn-primary:hover {
+  color: white;
+}
+
+
+</style>
+
+
+<div class="parallax" id="contact">
+ <section class="container" id="contact">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+       <h1>Let's Chat!</h1>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto" rel="stylesheet">
+        <h3>Have questions about my work? Want to grab a cup of coffee? Feel free to contact me.</h3>
+        
+        <div class="row" id="email-form">
+       <div class="col-sm-12 col-md-5">
+                <h2>EMAIL:</h2>
+                <p><i class="fas fa-envelope"></i> candice.marie.mcdermott@gmail.com</p>
+                
+                <h2>PHONE:</h2>
+                <p><i class="fas fa-mobile-alt"></i> 419.908.8503</p>
+               </div>
+               
+               <div class="col-sm-12 col-md-7">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" placeholder="*Enter your name" type="text" id="name" required>
+                 </div>
+                  
+                  <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input class="form-control" placeholder="*Enter your email" input type="email" id="email" required>
+                  </div>
+                                   
+                 <div class="form-group">
+                  <label for="textarea">Message</label>
+                  <textarea class="form-control" placeholder="Place your message here" style="resize:none" cols="121" rows="8"></textarea>
+                  </div>
+                 
+                  <button type="submit" id="form-button" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
+                </div>
+               
+ 
+  </section>
+  </div>
+
+
+<footer>&copy; 2018
+<a href="https://twitter.com/conscious_work?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @conscious_work</a>
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2FConsciousCollaborative&layout=button&size=small&mobile_iframe=true&width=58&height=20&appId" width="58" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+
+</footer>
+
+
+
+    <!-- Custom styles for this template go here -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- ============================= -->
+    <!-- All your JavaScript comes now -->
+    
+    
+
+    <!-- ============================= -->
+
+    <!-- Bootstrap core JS -->
+
+
 
   
-.card-header {
-  background: #e5e9ea;
-  text-align: center;
-}
 
-.card-header button {
-  color: black;
-  text-align: center;
-}
-
-.card-body {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  color: black;
-  text-align: center;
-}
-
-.btn {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem !important;
-}
-
-.btn-link:hover {
-    color: #cc6225 !important;
-    text-decoration: underline;
-    )
-
-
-@media (min-width: 768px) {
-  .modal-button button {
-    float: right;
-  }
-}
-
-
-/**** Contact page ***/
-
-/*Typography*/
+  <!-- Can place script tags with JavaScript files here -->
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
 
 
 
-body {
-  position: relative;
-}
+
+
+
+
+
