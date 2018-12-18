@@ -31,21 +31,40 @@ $(document).ready(function(){
   });
 
 
-$("#message-box").css("border", "2px solid blue");
-$("#message-box").css("background-color", "yellow");
-
-
-
 
 $("#form-button").on("click", function() {
-  var comment = $('#message-box').val();
+   if ( $('#message-box').val() === "") {
+   $("#message-box").css("background-color", "red");
+   } else {
+  // need it to be black
+   var comment = $('#message-box').val();
   console.log ();
   $('#visible-comment').html("Thank you for your message! I will be in touch with you shortly.");
   $('#message-box').hide();
-  return false;
+   return false;
+}
 });
 
 
+$("#message-box").on("keyup", function() {
+  console.log("keyup happened"); //here we make sure we're catching the keyup
+  // in here is where the rest of our code for this Exercise will go
+  var nameName = 3;
+  var name = "string";
+
+  var charCount = $("#message-box").val().length; //here we set the length of the content of the textarea to a variable
+  
+  console.log(charCount); //here we make sure we set it to the right value
+
+  $("#char-count").html(charCount); //here we show a running character count to the user
+  if(charCount > 50) {
+  $("#char-count").css("color", "red");
+  } else {
+  // need it to be black
+   $("#char-count").css("color", "black");
+}
+  
+});
 
 });
  
