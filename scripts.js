@@ -57,7 +57,7 @@ $("#message-box").on("keyup", function() {
   console.log(charCount); //here we make sure we set it to the right value
 
   $("#char-count").html(charCount); //here we show a running character count to the user
-  if(charCount > 50) {
+ if(charCount > 50) {
   $("#char-count").css("color", "red");
   } else {
   // need it to be black
@@ -66,5 +66,22 @@ $("#message-box").on("keyup", function() {
   
 });
 
+
+  // work section
+  for(var i = 0; i < works.length; ++i ) {
+  $("#works").append("\
+   <div class='col-sm-6 col-md-3'>\
+     <img class='img-fluid' src='" + works[i] + "' >\
+  </div>\
+ ");
+   var images = $("#work img");
+  if(i%2 === 0){
+    $(images[i]).css("border", "2px solid DodgerBlue");
+  } else {
+    $(images[i]).css("border", "2px solid salmon");
+  };
+};
+
+  
 });
- 
+
