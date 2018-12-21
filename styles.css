@@ -1,4 +1,5 @@
 
+
 .content { padding-top: 70px; }
 
 
@@ -161,16 +162,8 @@ a:hover.btn {
 
 }
 
-
-
-#work.container .row .col-6{
-  padding: 3%
-}
-
-#work.container .row .col-6 h4{
-  text-align: center;
-      font-family: 'Playfair Display', serif;
-  
+#works.row .col-md-3 {
+  padding: 3%;
 }
 
 
@@ -519,11 +512,11 @@ font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
-#form-button.btn-primary {
+#form-button.btn-primary a{
   color: black;
 }
 
-#form-button.btn-primary:hover {
+#form-button.btn-primary:hover a{
   color: white;
 }
 
