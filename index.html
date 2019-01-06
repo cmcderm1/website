@@ -48,7 +48,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About</a>
@@ -77,14 +77,10 @@
  
  
  
- 
- 
- 
- 
- 
+
 <!-- /HOME Section-->
 
-<div class="jumbotron jumbotron-fluid" id="top">
+<div class="jumbotron jumbotron-fluid" id="home">
   <div class="container">
     <h1 class="display-4">Candice McDermott</h1>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -383,8 +379,6 @@
 </div>
 
 
-
-
 <!-- /CONTACT Section-->
 
 <style>
@@ -392,6 +386,77 @@
   height: 300px;
   width: 400px;
 }
+
+
+.parallax {
+    /* The image used */
+    background-image: url("img/coffee.jpg");
+
+    /* Set a specific height */
+    height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h1{
+  padding-top: 10%;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+
+.parallax p{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+  
+  
+  .parallax h2{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+}
+  .parallax h3{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+
+
+.form-group {
+    font-family: 'Playfair Display', serif !important;
+
+}
+
+.col-md-7 #form-button.btn-primary {
+  color: black !important;
+}
+
+.col-sm-12 #form-button.btn-primary {
+  color: black !important;
+}
+
+.col-md-7 #form-button.btn-primary:hover {
+  color: white !important;
+}
+
+.col-sm-12 #form-button.btn-primary:hover {
+  color: white !important;
+}
+
+
+
+
 </style>
 
 <div class="parallax" id="contact">
@@ -429,9 +494,7 @@
                                    
                  <div class="form-group">
                   <label for="textarea">Message</label>
-                  <textarea class="form-control" id="message-box" placeholder="*Place your message here" input type="text" style="resize:none" cols="121" rows="8">
-                  
-                  </textarea>
+                  <textarea class="form-control" id="message-box" placeholder="*Place your message here" input type="text" style="resize:none" cols="121" rows="8"></textarea>
                   <p id="visible-comment">Please feel free to send me a message!</p>
                   <p id="char-count"></p>
                   </div>
@@ -448,11 +511,29 @@
   </div>
 </div>
 
-<footer>&copy; 2018
+<style>
+
+.centered { /* the element to center */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+footer {
+  text-align: center;
+  height: 50px; /* change this to other values to and see */
+  background: #222;
+  color: #fff;
+}
+
+</style>
+
+<footer>
+  <div class = "centered">
+  &copy; 2018
 <a href="https://twitter.com/conscious_work?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @conscious_work</a>
 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2FConsciousCollaborative&layout=button&size=small&mobile_iframe=true&width=58&height=20&appId" width="58" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
-
+</div>
 </footer>
 
 
